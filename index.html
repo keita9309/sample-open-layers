@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Draw Features</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="node_modules/ol/ol.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@latest/ol.css">
+  <script src="https://cdn.jsdelivr.net/npm/ol@latest/dist/ol.js"></script>
+  <style>
+    .map {
+      width: 100%;
+      height: 100vh;
+    }
+
+    #cursorPosition {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      padding: 5px;
+      background-color: rgba(255, 255, 255, 0.8);
+      font-size: 14px;
+      z-index: 1000;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="map" class="map"></div>
+  <div id="cursorPosition">Longitude: -, Latitude: -</div>
+
+  <script type="module" src="main.js"></script>
+</body>
+
+</html>
